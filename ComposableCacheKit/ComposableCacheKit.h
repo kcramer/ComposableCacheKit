@@ -6,7 +6,7 @@
 //  Copyright © 2018 Kevin. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for ComposableCacheKit.
 FOUNDATION_EXPORT double ComposableCacheKitVersionNumber;
