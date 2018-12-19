@@ -1,6 +1,6 @@
 # ComposableCacheKit
 
-[![CI Status](https://img.shields.io/travis/kcramer/ComposableCacheKit.svg?style=flat)](https://travis-ci.com/kcramer/ComposableCacheKit)
+[![CI Status](https://img.shields.io/travis/com/kcramer/ComposableCacheKit.svg?style=flat)](https://travis-ci.com/kcramer/ComposableCacheKit)
 
 ComposableCacheKit is a Swift framework that provides a lightweight composable cache. 
 Inspired by functional caches such as Carlos, it provides for constructing minimal, composable 
