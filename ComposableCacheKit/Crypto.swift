@@ -14,10 +14,9 @@ internal struct Crypto {
     /// Returns the SHA256 hash of a Data as a Data value.
     internal static func sha256(data: Data) -> Data {
         var hash = [UInt8](repeating: 0, count: Int(CC_SHA256_DIGEST_LENGTH))
-        data.withUnsafeBytes { bytes in
-            _ = CC_SHA256(bytes, CC_LONG(data.count), &hash)
-        }
-        return Data(bytes: hash)
+        let bytes = [UInt8](data)
+        CC_SHA256(bytes, CC_LONG(data.count), &hash)
+        return Data(hash)
     }
 
     /// Returns the SHA256 hash of a string as a hexadecimal string.
