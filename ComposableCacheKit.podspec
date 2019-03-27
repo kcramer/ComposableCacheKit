@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ComposableCacheKit'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A Swift framework that provides a lightweight, composable cache.'
   s.description      = <<-DESC
 ComposableCacheKit is a Swift framework that provides a lightweight, composable cache.
@@ -13,6 +13,7 @@ ComposableCacheKit is a Swift framework that provides a lightweight, composable 
 
   s.dependency 'Promises'
 
+  s.swift_version = '5.0'
   s.ios.deployment_target = '10.0'
   s.osx.deployment_target = '10.12'
   s.watchos.deployment_target = '3.0'
