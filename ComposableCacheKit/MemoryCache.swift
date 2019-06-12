@@ -6,6 +6,7 @@
 //  Copyright © 2018 Kevin. All rights reserved.
 //
 
+import Foundation
 import os.log
 import Promise
 
