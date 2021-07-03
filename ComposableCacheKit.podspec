@@ -11,13 +11,11 @@ ComposableCacheKit is a Swift framework that provides a lightweight, composable 
   s.author           = { 'Kevin Cramer' => 'kevinx@sent.com' }
   s.source           = { :git => 'https://github.com/kcramer/ComposableCacheKit', :tag => s.version.to_s }
 
-  s.dependency 'Promises'
+  s.swift_version = '5.5'
+  s.ios.deployment_target = '13.0'
+  s.osx.deployment_target = '10.15'
+  s.watchos.deployment_target = '6.0'
+  s.tvos.deployment_target = '13.0'
 
-  s.swift_version = '5.0'
-  s.ios.deployment_target = '10.0'
-  s.osx.deployment_target = '10.12'
-  s.watchos.deployment_target = '3.0'
-  s.tvos.deployment_target = '10.0'
-
-  s.source_files = 'ComposableCacheKit/**/*.swift'
+  s.source_files = 'Sources/**/*.swift'
 end

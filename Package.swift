@@ -1,10 +1,11 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.5
 import PackageDescription
 
 let package = Package(
     name: "ComposableCacheKit",
     platforms: [
-        .macOS(.v10_12), .iOS(.v10), .watchOS(.v3), .tvOS(.v10)
+        // TODO: Switch to constants again when added in future release.
+        .macOS(.v10_15), .iOS(.v13), .watchOS(.v6), .tvOS(.v13), .macCatalyst(.v15)
     ],
     products: [
         .library(
@@ -13,18 +14,14 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/khanlou/Promise", .upToNextMajor(from: "2.0.1"))
     ],
     targets: [
         .target(
-            name: "ComposableCacheKit",
-            dependencies: ["Promise"],
-            path: "ComposableCacheKit"
+            name: "ComposableCacheKit"
         ),
         .testTarget(
             name: "ComposableCacheKitTests",
-            dependencies: ["ComposableCacheKit"],
-            path: "ComposableCacheKitTests"
+            dependencies: ["ComposableCacheKit"]
         )
     ]
 )

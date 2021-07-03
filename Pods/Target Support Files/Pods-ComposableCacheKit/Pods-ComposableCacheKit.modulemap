@@ -1,6 +1,0 @@
-framework module Pods_ComposableCacheKit {
-  umbrella header "Pods-ComposableCacheKit-umbrella.h"
-
-  export *
-  module * { export * }
-}
