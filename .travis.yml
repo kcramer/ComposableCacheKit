@@ -1,9 +1,0 @@
-matrix:
-  include:
-    - name: "macOS Xcode 10.2 Test"
-      osx_image: xcode10.2
-      xcode_workspace: ComposableCacheKit.xcworkspace
-      xcode_scheme: ComposableCacheKit
-      xcode_destination: platform=macOS
-      os: osx
-      language: swift
